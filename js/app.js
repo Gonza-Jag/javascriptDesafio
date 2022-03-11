@@ -11,3 +11,8 @@ function tablaDeHerramientas(){
     console.info("Tabla de herramientas:", herramientas.length, "diferentes.")
 }
 
+function filtrarHerramientas() {
+    const resultado = prompt("Ingrese la herramienta que busca:")
+    let resultadoFiltro = herramientas.filter((herra)=> herra.nombre == resultado)
+    console.table(resultadoFiltro)
+}
